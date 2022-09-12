@@ -1,0 +1,215 @@
+ul {
+  padding: 0;
+}
+
+.header {
+  list-style-type: none;
+  margin: 10px;
+  overflow: hidden;
+  margin-right: 16px;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+}
+/*list-style-type: none ; liste görünümündeki yazıların noktalarının istenmediği durumlarda kullanılır*/
+.buttons {
+  list-style-type: none;
+  margin: 10px;
+  overflow: hidden;
+  margin-right: 16px;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  border: 1px;
+  border-color: #f2f2f2;
+}
+/*border ve border-color ile kenarlık kalınlığı ve rengi tanımlandı*/
+
+.headerleft {
+  list-style-type: none;
+  margin: 0px;
+  overflow: hidden;
+  margin-left: 0px;
+  text-align: start;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  float:left ;
+}
+
+.headerli a {
+  display: block;
+  color: black;
+  text-align: center;
+  float: right;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.headerli a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+  margin: 100px;
+}
+
+
+.search-area {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5; 
+  box-shadow: ;
+  z-index: 3; 
+  height: 44px;
+  margin: 0 auto;
+  margin-top: -77px;
+  width: 582px;
+  border-radius: 291px;
+  
+}
+/*border-radius ile kenarların yuvarlatılması sağlandı*/
+.search-area:hover {
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19); 
+}
+
+.search {
+ /* flex: 1;*/
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+}
+/*flex: 1 pasif yapıldı, flex 1 olduğunda parentte kapladığı alanın tamamını almaya çalışır*/
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+/*align-items: center ile büyüteç resminin dikeyde ortalanması sağlandı*/
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+
+.input-enter {
+  display: flex;
+  flex: 1;
+  /*flex-wrap: wrap;*/
+  padding-right: 1rem;
+  align-items: center;
+}
+/*flex-wrap pasif yapılarak sesle arama resminin sağa dayanması sağlanmıştır*/
+.input-area {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 30px;
+  display: inline-flex;
+}
+
+.input {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: 0;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 30px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+  border: 0px;
+}
+/*border: 0 yapılarak kenar çizgisi yok edildi*/
+.googlesearch {
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.25rem;
+  border: 1px;
+  font-size: 14px;
+  border-color: #f2f2f2 ;
+
+
+}
+
+.goxjub {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+
+.feelinglucky {
+  padding: 0 16px;
+  line-height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.25rem;
+  border: 1px;
+  font-size: 14px;
+  border-color: #f2f2f2 ;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -8px;
+  line-height: 10px;
+  list-style-type: none;
+  background-color:#f2f2f2;
+
+}
+
+.footerli {
+  float: left;
+  /* list-style-type: none; */
+}
+
+/* list-style-type: none; parentte kullanılan style childları da etkilediği için childlara kullanılmasına gerek yoktur */
+
+.footerli a {
+  display: block;
+  color: #70757a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+}
+/*text-align: center; kullanılarak arama metninin arama alanı içerisinde dikey ortalanmması sağlanmıştır*/
+
+.footerli a:hover {
+  text-decoration: underline;
+}
